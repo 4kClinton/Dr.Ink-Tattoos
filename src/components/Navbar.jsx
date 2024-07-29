@@ -14,7 +14,7 @@ const Navbar = () => {
         <li className={location.pathname === '/portfolio' ? 'active' : ''}>
           <Link to="/portfolio">
             <FontAwesomeIcon icon={faImages} />
-            <span className="visually-hidden">Portfolio</span> {/* Accessible label */}
+            <span className="visually-hidden"></span> {/* Accessible label */}
           </Link>
         </li>
         <li className={location.pathname === '/' ? 'active' : ''}>
@@ -33,7 +33,7 @@ const Navbar = () => {
         <li className={location.pathname === '/contact' ? 'active' : ''}>
           <Link to="/contact">
             <FontAwesomeIcon icon={faEnvelope} />
-            <span className="visually-hidden">Contact</span> {/* Accessible label */}
+            <span className="visually-hidden"></span> {/* Accessible label */}
           </Link>
         </li>
       </ul>
