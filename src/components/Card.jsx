@@ -2,6 +2,9 @@ import React from 'react';
 // import './Card.css'; // Ensure you have the styles imported
 
 const Card = () => {
+   
+  const whatsapp = 'https://wa.me/254796205375' 
+
   return (
     <div className="card">
       <div className="card__border"></div>
@@ -86,7 +89,8 @@ const Card = () => {
           
         </li>
       </ul>
-      <button className="button">Enroll Now</button>
+      <button className="button" onClick={() => window.open(whatsapp, '_blank')}>Enroll Now</button>
+
     </div>
   );
 };
