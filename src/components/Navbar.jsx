@@ -11,17 +11,24 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="navbar">
-        <li className={location.pathname === '/' ? 'active' : ''}>
-          <Link to="/">
-            <FontAwesomeIcon icon={faHome} /><br/>
-            <span className="visually-hidden">Home</span> {/* Accessible label */}
-          </Link>
-        </li>
         <li className={location.pathname === '/portfolio' ? 'active' : ''}>
           <Link to="/portfolio">
             <FontAwesomeIcon icon={faImages} />
             <span className="visually-hidden">Portfolio</span> {/* Accessible label */}
           </Link>
+        </li>
+        <li className={location.pathname === '/' ? 'active' : ''}>
+
+
+
+          <Link to="/">
+            <FontAwesomeIcon icon={faHome} /><br/>
+            <span className="visually-hidden"></span> {/* Accessible label */}
+          </Link>
+
+
+        
+          
         </li>
         <li className={location.pathname === '/contact' ? 'active' : ''}>
           <Link to="/contact">

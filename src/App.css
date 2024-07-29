@@ -116,8 +116,8 @@ ul {
   border-radius: 3vh;
   padding: 10px;
   position: fixed;
-  bottom: 1vh;
-  width: 95%;
+  bottom: 2vh;
+  width: 70%;
   z-index: 1000;
   left: 50%;
   transform: translateX(-50%);
@@ -132,7 +132,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
+  width: 30px;
   height: 40px;
   text-decoration: none;
   color: #888;
@@ -169,8 +169,10 @@ ul {
 
 .navbar li.active a:hover {
   background-color: rgb(255, 52, 52);
-  border-radius: 10px;
+  border-radius: 10vh;
 }
+
+
 
 .grid-gallery {
   width: 96%;
