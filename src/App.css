@@ -9,7 +9,7 @@ body {
   background-color: #212121;
   color: var(--accent);
   font-family: 'Arial', sans-serif;
-  
+  height: 100dvh;
 }
 
 a {
@@ -147,7 +147,7 @@ ul {
   padding: 10px 10px;
   height: auto;
   border-radius: 10px;
-  transform: translateY(-10px);
+  /*   x */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
