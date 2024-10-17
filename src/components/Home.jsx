@@ -14,9 +14,9 @@ const Home = () => {
           src={`${process.env.PUBLIC_URL}/assets/logo.png`}
           alt="Dr.Ink Logo"
         />
-        <p className="home-intro">
+        {/* <p className="home-intro">
          LET'S INK
-        </p>
+        </p> */}
       </div>
       <div className="image-gallery">
         <Card
