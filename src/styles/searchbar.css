@@ -1,0 +1,224 @@
+/* searchbar.css */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* Full width */
+    max-width: 200vh;
+    /* Limit maximum width for a better look */
+    margin: 0 auto;
+    /* Center the search bar */
+    background-color: #212121;
+    /* Background color */
+    border-radius: 24px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin-top: 5vh;
+}
+
+.search-input {
+    width: 80%;
+    border: none;
+    /* Remove default border */
+    outline: none;
+    /* Remove default outline */
+    padding: 10px;
+    /* Padding for the input */
+    border-radius: 24px;
+    /* Match the border radius */
+    flex-grow: 1;
+    /* Allow input to grow */
+    font-size: 16px;
+    /* Font size */
+}
+
+.search-icon {
+    background: none;
+    /* Remove default button background */
+    border: none;
+    /* Remove default button border */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+}
+
+.icon {
+    width: 24px;
+    /* Set width for the icon */
+    height: 24px;
+    /* Set height for the icon */
+    color: #ff0000;
+    /* Change color to your preference */
+}
+
+.icon:hover {
+    color: #ff0000;
+    /* Change color on hover for better UX */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+
+/* grid */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search-container{
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+}
+.search-input {
+    padding: 10px;
+    background-color: #212121;
+    border-radius: 26px;
+    width: 300px;
+    margin-left: 5px;
+    color: #f0f0f0;
+
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.grid {
+    width: 90%;
+    display: grid;
+    align-items: center;
+    margin-left: 21px;
+    /* Center items vertically in the grid */
+    justify-content: center;
+    /* Center items horizontally in the grid */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Adjust size as needed */
+    gap: 5px;
+    /* Space between grid items */
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Prevent images from overflowing */
+}
+
+.grid-item img {
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove bottom space */
+}
+
+
+/* Additional styles for background blur */
+.blurred {
+    backdrop-filter:blur(5px) ;
+    /* filter: blur(5px); */
+    /* Apply blur effect */
+}
+
+/* Styles for the search history */
+.search-history {
+    margin-top: 20px;
+    text-align: center;
+    /* Center align the search history */
+}
+
+.search-history h3 {
+    margin-bottom: 10px;
+    
+}
+
+.search-history ul {
+    list-style: none;
+    /* Remove default list styles */
+    padding: 0;
+    /* Remove padding */
+}
+
+.search-history li {
+    background: #212121;
+    color: #ffffff;
+    /* Light background for history items */
+    padding: 10px;
+    margin: 5px 0;
+    /* Space between history items */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* newwwww */
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Slightly darker for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 90%;
+    /* Make it responsive */
+    max-height: 80%;
+    /* Prevent overflow */
+    overflow: hidden;
+    /* Hide overflow */
+    z-index: 1001;
+    /* Ensure it's on top of the overlay */
+}
+
+/* Close Button */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Image in Modal */
+.modal-content img {
+    max-width: 100%;
+    max-height: 70vh;
+    /* Adjust height to avoid overflow */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+}
+
+.history{
+    color: #f0f0f0;
+    background-color: #212121;
+
+}

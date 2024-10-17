@@ -1,24 +1,22 @@
-// src/components/Portfolio.js
-import React from 'react';
-import Navbar from './Navbar';
-import GridGallery from './Gallery';
+import React, { useEffect, useState } from "react";
+import Navbar from "./Navbar";
+import GridGallery from "./Gallery";
+import axios from "axios"; // You can use fetch if you prefer
 
 const Portfolio = () => {
-  const images = [
-    { src: require("../assets/tat7.jpg") },
-    { src: require("../assets/tat9.jpg") },
-    { src: require("../assets/tat10.jpg") },
-    { src: require("../assets/tat3.jpg") },
-    { src: require("../assets/tat2.jpg") },
-    // { src: require('../assets/tat1.jpg'),  },
-    { src: require("../assets/tat5.jpg") },
-    
-    { src: require("../assets/tat6.jpg") },
+  const [images, setImages] = useState([]);
 
-    { src: require("../assets/tat4.jpg") },
-
-    { src: require("../assets/tat8.jpg") },
-  ];
+  useEffect(() => {
+    // Fetching images from the deployed db.json file in the public folder
+    axios
+      .get("/db.json") // Since db.json is in the public folder, this will work
+      .then((response) => {
+        setImages(response.data.images); // Assuming your JSON structure has an "images" array
+      })
+      .catch((error) => {
+        console.error("Error fetching images:", error);
+      });
+  }, []);
 
   return (
     <div>

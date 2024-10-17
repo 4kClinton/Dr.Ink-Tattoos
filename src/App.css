@@ -173,7 +173,20 @@ ul {
 } */
 
 
-
+.home-intro{
+  font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat font */
+    font-weight: 700;
+      /* Adjust weight as needed */
+      font-size: 2rem;
+      /* Adjust font size as needed */
+      
+      /* Change the color if needed */
+      text-align: center;
+      /* Center the text */
+      margin: 20px 0;
+      /* Add some margin if desired */
+}
 .grid-gallery {
   width: 96%;
   display: grid;
@@ -237,7 +250,7 @@ ul {
 
 .home-container {
   position: relative;
-  background: url('./assets/image14.jpg') no-repeat center center/cover;
+  background: url(../public/assets/image14.jpg) no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -248,12 +261,13 @@ ul {
 }
 
 .content {
-  margin-top: 50px;
+  margin-top: 30px;
+  height: 20vh;
 }
 
 #home-logo {
   width: 150px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .image-gallery {

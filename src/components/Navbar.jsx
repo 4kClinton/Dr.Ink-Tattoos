@@ -1,8 +1,12 @@
 // src/components/Navbar.js
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faImages, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faImages,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 // import './Navbar.css'; // Assuming the CSS is in Navbar.css
 
 const Navbar = () => {
@@ -11,26 +15,21 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="navbar">
-        <li className={location.pathname === '/portfolio' ? 'active' : ''}>
+        <li className={location.pathname === "/portfolio" ? "active" : ""}>
           <Link to="/portfolio">
             <FontAwesomeIcon icon={faImages} />
             <span className="visually-hidden"></span> {/* Accessible label */}
           </Link>
         </li>
-        <li className={location.pathname === '/' ? 'active' : ''}>
-
-
-
+        <li className={location.pathname === "/" ? "active" : ""}>
+          {/* Use a <Link> for the home link */}
           <Link to="/">
-            <FontAwesomeIcon icon={faHome} /><br/>
+            <FontAwesomeIcon icon={faHome} />
+            <br />
             <span className="visually-hidden"></span> {/* Accessible label */}
           </Link>
-
-
-        
-          
         </li>
-        <li className={location.pathname === '/contact' ? 'active' : ''}>
+        <li className={location.pathname === "/contact" ? "active" : ""}>
           <Link to="/contact">
             <FontAwesomeIcon icon={faEnvelope} />
             <span className="visually-hidden"></span> {/* Accessible label */}

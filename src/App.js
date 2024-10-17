@@ -8,7 +8,12 @@ import Navbar from './components/Navbar';
 // import GridGallery from './components/Gallery';
 // import CardCarousel from './components/Slider'; // Import CardCarousel component
 import './App.css';
-
+import { Analytics } from "@vercel/analytics/react"
+import { inject } from '@vercel/analytics';
+import ModalPage from './components/ModalPage'; // New component for the modal page
+import SearchBar from './components/Searchbar';
+ 
+inject();
 function App() {
   
 
@@ -20,9 +25,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+                <Route path="/search/:query" element={<SearchBar />} />
+                <Route path="/modal/:imageId" element={<ModalPage />} />
           {/* <GridGallery images={images} /> */}
         </Routes>
         {/* <CardCarousel images={images} /> CardCarousel component with images */}
+        <Analytics />
       </div>
     </Router>
   );
